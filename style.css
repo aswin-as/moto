@@ -1,0 +1,279 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Hero section styles */
+  #hero-section {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-content {
+    margin-top: 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 24px;
+  }
+  
+  .hero-content p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  /* Social section styles */
+#social-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 20px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #ff0000;
+  }
+  
+  /* Instagram icon color */
+  .social-icons .instagram-icon {
+    color: #e4405f;
+  }
+  
+  /* WhatsApp icon color */
+  .social-icons .whatsapp-icon {
+    color: #25d366;
+  }
+  
+  
+  /* Gallery section styles */
+  #gallery-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+
+
+  /* nav */
+  *,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: absolute;
+    top: -110px;
+    left: -100px;
+    text-align: center;
+  
+ 
+  
+}
+
+
+
+.menu-items {
+    text-align: center;
+    position: absolute;
+    padding: 5rem;
+    margin-top: -6rem;
+    margin-left: -1rem;
+    top: 13rem;
+    left: 7.5rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 1.5rem;
+    border: 4px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    background-color: red;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items li a:hover{
+    color: rgb(174, 174, 174);
+}
+
+.check {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.ham-menu {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    padding: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: red;
+    border-radius: 0.25em;
+}
+
+.ham-menu .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+.ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+    opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+
+/* icon colors */
+.fa-instagram{
+    color: red;
+}
+.fa-whatsapp{
+    color: rgb(117, 187, 11);
+}
